@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = "http://localhost:5000/api/tasks";
+const API = "https://task-manager-1-l2ln.onrender.com/api/tasks";
 
 export const getTasks = (params = {}) => axios.get(API, { params });
 export const getTaskById = (id) => axios.get(`${API}/${id}`);
